@@ -37,7 +37,11 @@
 		</repository>
 		<repository>
 			<id>confuser-repo</id>
-			<url>http://ci.frostcast.net/plugin/repository/everything</url>
+			<url>https://ci.frostcast.net/plugin/repository/everything</url>
+		</repository>
+		<repository>
+			<id>libs</id>
+			<url>file:${project.basedir}/lib</url>
 		</repository>
 	</repositories>
 	<dependencies>
@@ -51,7 +55,8 @@
 			<groupId>org.black_ixx</groupId>
 			<artifactId>BossShopPro</artifactId>
 			<version>1.9.9</version>
-			<scope>provided</scope>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/libs/BossShopPro.jar</systemPath>
 		</dependency>
 	</dependencies>
 </project>
